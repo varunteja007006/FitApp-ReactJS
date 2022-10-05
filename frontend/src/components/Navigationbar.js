@@ -19,7 +19,7 @@ function Navigationbar() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#features">
-                <i class="fa-sharp fa-solid fa-house"></i>{" "}
+                <i className="fa-sharp fa-solid fa-house"></i>{" "}
                 Home
               </Nav.Link>
               <Nav.Link href="#pricing">

@@ -1,5 +1,8 @@
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
+body{
+  background-color: rgba(190, 190, 190, 0.5);
+}
 
 .header {
   text-align: center;
@@ -16,5 +19,20 @@
 
 .workouts-box{
   background-color: black;
+  border: 0.5rem solid black;
   border-radius: 0.5rem;
+}
+
+.form{
+  background-color: white;
+  border-radius: 0.5rem;
+
+  .submit-btn{
+    background-color: green;
+    color: white;
+  }
+
+  .text-center{
+    text-align: center;
+  }
 }

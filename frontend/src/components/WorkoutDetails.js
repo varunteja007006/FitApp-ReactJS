@@ -1,11 +1,9 @@
 import React from "react";
 import ListGroup from "react-bootstrap/ListGroup";
 
-function WorkoutDetails({ workouts }) {
+function WorkoutDetails({ workout }) {
   return (
-    <ListGroup as="ol" numbered className="p-2">
-      {workouts &&
-        workouts.map((workout) => (
+    <ListGroup as="ol" numbered className="">
           <ListGroup.Item
             as="li"
             key={workout._id}
@@ -18,7 +16,6 @@ function WorkoutDetails({ workouts }) {
               <div className="text-muted">Date: {workout.createdAt}</div>
             </div>
           </ListGroup.Item>
-        ))}
     </ListGroup>
   );
 }
