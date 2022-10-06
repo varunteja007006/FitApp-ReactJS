@@ -22,3 +22,7 @@ Create account > create database > Choose the plan, cloud provider, give cluster
 # Understanding Bootstrap
 Please refer the link given here,
 https://react-bootstrap.github.io/getting-started/introduction/
+
+# To format Date
+we use datefns package 
+npm i date-fns

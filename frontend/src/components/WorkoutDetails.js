@@ -2,6 +2,7 @@ import React from "react";
 import ListGroup from "react-bootstrap/ListGroup";
 import Button from "react-bootstrap/Button";
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
+import { formatDistanceToNow } from "date-fns";
 
 function WorkoutDetails({ workout }) {
   const {dispatch} = useWorkoutsContext()
@@ -29,7 +30,7 @@ function WorkoutDetails({ workout }) {
           <div className="fw-bold">{workout.title}</div>
           <div className="">Reps : {workout.reps}</div>
           <div className="">Load (kg): {workout.load}</div>
-          <div className="text-muted">Date: {workout.createdAt}</div>
+          <div className="text-muted">Date: {formatDistanceToNow(new Date(workout.createdAt), {addSuffix: true})}</div>
         </div>
         <Button variant="warning" onClick={handleDelete}>
           <i className="fa-solid fa-trash-can"></i>
