@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema
 
+
+//Model to create a table in MongoDB
 const workoutSchema = new Schema({
     title: {
         type: String,

@@ -106,8 +106,8 @@ function WorkoutForm() {
       <div className="text-center">
         <Button
           type="submit"
-          className="submit-btn ms-auto me-auto mt-0 mb-2"
-          variant="success"
+          variant="submitbtn"
+          className="ms-auto me-auto mt-0 mb-2"
         >
           Add
         </Button>
