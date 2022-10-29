@@ -31,7 +31,7 @@ function WorkoutDetails({ workout }) {
 }
 
   return (
-    <ListGroup as="ol" numbered className="">
+    <ListGroup as="ol" className="mb-1">
       <ListGroup.Item
         as="li"
         key={workout._id}
