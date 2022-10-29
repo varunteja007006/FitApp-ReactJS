@@ -1,18 +1,26 @@
 import React, { useEffect } from "react";
+
+import WorkoutDetails from "../components/WorkoutDetails";
+import WorkoutForm from "../components/WorkoutForm";
+
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import WorkoutDetails from "../components/WorkoutDetails";
-import WorkoutForm from "../components/WorkoutForm";
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
+import { useAuthContext } from "../hooks/useAuthContext";
 
 function Home() {
   const { workouts, dispatch } = useWorkoutsContext();
+  const {user} = useAuthContext()
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch(`/api/workouts`);
+      const response = await fetch(`/api/workouts`, {
+        headers: {
+          'Authorization': `Brearer ${user.token}`
+        }
+      });
       const data = await response.json();
 
       if (response.ok) {
@@ -20,8 +28,10 @@ function Home() {
       }
     };
 
-    fetchWorkouts();
-  }, [dispatch]);
+    if (user) {
+    fetchWorkouts();      
+    }
+  }, [dispatch, user]);
 
   return (
     <div>

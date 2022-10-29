@@ -1,15 +1,26 @@
 import React from "react";
-import ListGroup from "react-bootstrap/ListGroup";
-import Button from "react-bootstrap/Button";
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
 import { formatDistanceToNow } from "date-fns";
+import { useAuthContext } from "../hooks/useAuthContext";
+
+import ListGroup from "react-bootstrap/ListGroup";
+import Button from "react-bootstrap/Button";
+
 
 function WorkoutDetails({ workout }) {
   const {dispatch} = useWorkoutsContext()
+  const { user } = useAuthContext();
 
   const handleDelete = async () => {
+        if (!user) {
+          return;
+    }
+    
     const response = await fetch(`/api/workouts/` + workout._id, {
-    method: 'DELETE'
+      method: 'DELETE',
+      headers: {
+          'Authorization': `Brearer ${user.token}`
+        }
     })
     
     const data = await response.json()
