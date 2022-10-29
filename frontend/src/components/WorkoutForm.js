@@ -112,7 +112,7 @@ function WorkoutForm() {
           Add
         </Button>
         {error && (
-          <Alert variant="danger m-2">
+          <Alert variant="danger" className="m-2">
             <i className="fa-sharp fa-solid fa-triangle-exclamation"></i>{" "}
             {error}
           </Alert>

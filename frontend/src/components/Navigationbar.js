@@ -3,10 +3,16 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
+import { useLogout } from "../hooks/useLogout";
 
 function Navigationbar() {
+  const {logout} = useLogout();
+
+  const handleClick = () => {
+    logout();
+  };
+
   return (
     <header>
       <div className="container"></div>
@@ -18,29 +24,24 @@ function Navigationbar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features">
-                <i className="fa-sharp fa-solid fa-house"></i>{" "}
-                Home
+              <Nav.Link href="/">
+                <i className="fa-sharp fa-solid fa-house"></i> Home
               </Nav.Link>
-              <Nav.Link href="#pricing">
-                Pricing
-              </Nav.Link>
-              <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href="/login">Login</Nav.Link>
+              <Nav.Link href="/signup">Sign Up</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="/README.md">
+              <Nav.Link>
+                <Button
+                  className="navbar-logout-btn"
+                  variant="danger"
+                  onClick={handleClick}
+                >
+                  Logout{" "}
+                  <i className="fa-sharp fa-solid fa-right-from-bracket"></i>
+                </Button>
+              </Nav.Link>
+              <Nav.Link>
                 <Button className="navbar-theme-btn" variant="secondary">
                   Dark Mode
                 </Button>
