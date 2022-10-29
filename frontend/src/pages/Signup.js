@@ -19,7 +19,9 @@ function Signup() {
   return (
     <Container>
       <Form className="p-3 mt-3" onSubmit={handleSubmit}>
-        <h3>Sign Up</h3>
+        <div className="text-center">
+          <h3>Sign Up</h3>
+        </div>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control
@@ -41,9 +43,6 @@ function Signup() {
               setPassword(e.target.value);
             }}
           />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
         </Form.Group>
         <div className="text-center">
           <Button variant="signupbtn" type="submit" disabled={isLoading}>
