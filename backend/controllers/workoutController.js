@@ -73,6 +73,7 @@ const updateWorkout = async (req, res) => {
   if (!mongoose.Types.ObjectId.isValid(id)) {
     return res.status(404).json({ error: "no such workout" });
   }
+  //pass two objects into findOneAndUpdate , find criteria & which has to be updated
   const workout = await Workout.findOneAndUpdate({ _id: id }, { ...req.body });
 
   if (!workout) {

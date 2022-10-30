@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "011457af-bd70-4c0a-b303-f9874fc60815",
+		"name": "Workouts collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23109078"
+	},
+	"item": [
+		{
+			"name": "Add workouts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Pullups\",\r\n    \"reps\": \"30\",\r\n    \"load\": \"10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/workouts/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"workouts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all workouts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/workouts/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"workouts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single workout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/workouts/63383c",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"workouts",
+						"63383c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete workout",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/workouts/63383ca0299e554d33b7391c",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"workouts",
+						"63383ca0299e554d33b7391c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update workout",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"reps\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/workouts/63383ca0299e554d33b7391c",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"workouts",
+						"63383ca0299e554d33b7391c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
