@@ -1,8 +1,7 @@
-# MERNstack
-MERNstack app for learning Node.js , Express , MongoDB, React.
+# FitApp 💪
+This app is encourages users to add their daily fitness routine.
 
-For more info check out The Net Ninja - https://www.youtube.com/watch?v=98BzS5Oz5E4&list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE
-
+Built using MERN Stack - MongoDB, Express JS, React JS, Node JS
 -------------------------------------------------------------------------------------------------------------------------------
 
 Use Nodemon package globally for refresh of changes.
@@ -13,7 +12,7 @@ Use Nodemon package globally for refresh of changes.
 --------------------------------------------------------------------------------------------------------------------------------
 
 # npm install dotenv
-1. create a file with format '.env' at path 'backend/.env'
+1. create a file with format '.env' at path as 'backend/.env'
 2. File should contain
     PORT=XXXX
     MONGO_URI = mongodb+srv://xxxxx:xxxxxxxxx@mernstack.yzzbe4o.mongodb.net/?retryWrites=true&w=majority
@@ -50,5 +49,5 @@ npm i date-fns
 
 -------------------------------------------------------------------------------------------------------------------------------
 
-# Project explanation
-https://youtu.be/WsRBmwNkv3Q
+# Project explanation by The Net Ninja 🥷
+For more info check out The Net Ninja - https://www.youtube.com/watch?v=98BzS5Oz5E4&list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE
