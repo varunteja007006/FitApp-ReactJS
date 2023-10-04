@@ -5,13 +5,13 @@ Built using MERN Stack - MongoDB, Express JS, React JS, Node JS
 -------------------------------------------------------------------------------------------------------------------------------
 
 Use Nodemon package globally for refresh of changes.
-# npm install nodemon
+## npm install nodemon
 -nodemon server.js -> saved in scripts of package.json as 'dev'
 -npm run dev (Runs the backend)
 
 --------------------------------------------------------------------------------------------------------------------------------
 
-# npm install dotenv
+## npm install dotenv
 1. create a file with format '.env' at path as 'backend/.env'
 2. File should contain
     PORT=XXXX
@@ -20,7 +20,7 @@ Use Nodemon package globally for refresh of changes.
 
 -------------------------------------------------------------------------------------------------------------------------------
 
-# Mongo DB setup:
+## Mongo DB setup:
 Create account > create database > Choose the plan, cloud provider, give cluster name.
 
 * Security 
@@ -37,13 +37,13 @@ Create account > create database > Choose the plan, cloud provider, give cluster
 
 -------------------------------------------------------------------------------------------------------------------------------
 
-# Understanding Bootstrap
+## Understanding Bootstrap
 Please refer the link given here,
 https://react-bootstrap.github.io/getting-started/introduction/
 
 -------------------------------------------------------------------------------------------------------------------------------
 
-# To format Date
+## To format Date
 we use datefns package 
 npm i date-fns
 
