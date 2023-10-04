@@ -4,16 +4,18 @@ This app is encourages users to add their daily fitness routine.
 Built using MERN Stack - MongoDB, Express JS, React JS, Node JS
 -------------------------------------------------------------------------------------------------------------------------------
 
-Use Nodemon package globally for refresh of changes.
-## npm install nodemon
--nodemon server.js -> saved in scripts of package.json as 'dev'
--npm run dev (Runs the backend)
+## Nodemon
+Use Nodemon package globally for refresh of changes in the backend.
+1. npm install nodemon
+2. nodemon server.js -> saved in scripts of package.json as 'dev'
+3. npm run dev (Runs the backend)
 
 --------------------------------------------------------------------------------------------------------------------------------
 
-## npm install dotenv
-1. create a file with format '.env' at path as 'backend/.env'
-2. File should contain
+## dotenv
+1. npm install dotenv
+2. create a file with format '.env' at path as 'backend/.env'
+3. File should contain
     PORT=XXXX
     MONGO_URI = mongodb+srv://xxxxx:xxxxxxxxx@mernstack.yzzbe4o.mongodb.net/?retryWrites=true&w=majority
     SECRET = xxxxxxxxxxxxxxxxxxxxxxxx
@@ -49,5 +51,5 @@ npm i date-fns
 
 -------------------------------------------------------------------------------------------------------------------------------
 
-# Project explanation by The Net Ninja 🥷
+## Project explanation by The Net Ninja 🥷
 For more info check out The Net Ninja - https://www.youtube.com/watch?v=98BzS5Oz5E4&list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE
