@@ -53,3 +53,7 @@ npm i date-fns
 
 ## Project explanation by The Net Ninja 🥷
 For more info check out The Net Ninja - https://www.youtube.com/watch?v=98BzS5Oz5E4&list=PL4cUxeGkcC9iJ_KkrkBZWZRHVwnzLIoUE
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Thank you for checking out my repo.
